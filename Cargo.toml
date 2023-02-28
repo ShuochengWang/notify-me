@@ -7,7 +7,7 @@ keywords = ["notify", "notifier", "message", "email", "wechat"]
 categories = ["web-programming"]
 authors = ["Shuocheng Wang <wangshch5@outlook.com>"]
 homepage = "https://github.com/ShuochengWang/notify-me"
-repository = "https://github.com/ShuochengWang/notify-me"ss
+repository = "https://github.com/ShuochengWang/notify-me"
 readme = "README.md"
 license = "MIT OR Apache-2.0"
 
