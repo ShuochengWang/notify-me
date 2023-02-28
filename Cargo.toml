@@ -2,6 +2,14 @@
 name = "notify-me"
 version = "0.1.0"
 edition = "2021"
+description = "Send notifications to email or communication software, such as WeChat."
+keywords = ["notify", "notifier", "message", "email", "wechat"]
+categories = ["web-programming"]
+authors = ["Shuocheng Wang <wangshch5@outlook.com>"]
+homepage = "https://github.com/ShuochengWang/notify-me"
+repository = "https://github.com/ShuochengWang/notify-me"ss
+readme = "README.md"
+license = "MIT OR Apache-2.0"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
