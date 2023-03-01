@@ -1,4 +1,12 @@
+use ctor::ctor;
 use notify_me::{Notify, WechatNotifier};
+
+#[ctor]
+fn init() {
+    let _ = env_logger::builder()
+        .filter_module("notify_me", log::LevelFilter::Debug)
+        .init();
+}
 
 #[test]
 fn test_wechat() {
