@@ -1,7 +1,8 @@
-use notify_me::*;
+use notify_me::{Notify, WechatNotifier};
 
 #[test]
-fn it_works() {
-    let notifier = notify_me::WechatNotifier::new("");
-    notifier.notify().unwrap();
+fn test_wechat() {
+    let token = std::fs::read_to_string("tests/wechat.config").unwrap();
+    let notifier = WechatNotifier::new(&token);
+    notifier.notify("testing title", "testing message").unwrap();
 }
