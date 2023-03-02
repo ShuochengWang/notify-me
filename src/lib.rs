@@ -10,7 +10,7 @@
 //!
 //! ## Example
 //! To use this library, add the following to your `Cargo.toml`:
-//! ```rust
+//! ```toml
 //! [dependencies]
 //! notify-me = "0.1.0"
 //! ```
@@ -20,7 +20,7 @@
 //! Note that, this crate use [xtuis](https://xtuis.cn/) to implement WeChat notifications.
 //! Hence you have to first follow the WeChat official account of [xtuis](https://xtuis.cn/) and get the `token`.
 //!
-//! ```rust
+//! ```no_run
 //! use notify_me::{Notify, WechatNotifier};
 //!
 //! let notifier = WechatNotifier::new("your xtuis token").unwrap();
@@ -29,7 +29,7 @@
 //!
 //! ### Send notifications to email
 //!
-//! ```rust
+//! ```no_run
 //! use notify_me::{Notify, EmailNotifier};
 //!
 //! let notifier = EmailNotifier::new("smtp_host", "smtp_username", "smtp_password", "recipient").unwrap();
