@@ -17,6 +17,7 @@ license = "MIT"
 [dependencies]
 anyhow = "1.0"
 ureq = "2.6.2"
+lettre = "0.10"
 log = "0.4"
 
 [dev-dependencies]
