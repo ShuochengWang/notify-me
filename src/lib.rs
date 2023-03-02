@@ -12,7 +12,7 @@
 //! To use this library, add the following to your `Cargo.toml`:
 //! ```toml
 //! [dependencies]
-//! notify-me = "0.1.0"
+//! notify-me = "0.2"
 //! ```
 //!
 //! ### Send notifications to WeChat

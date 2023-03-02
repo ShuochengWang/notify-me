@@ -1,6 +1,6 @@
 [package]
 name = "notify-me"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "Send notifications to email or communication software, such as WeChat."
 keywords = ["notify", "notifier", "message", "email", "wechat"]
