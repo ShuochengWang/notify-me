@@ -12,7 +12,7 @@ It is very suitable for developers to receive notifications of their software on
 
 To use this library, add the following to your `Cargo.toml`:
 
-```toml
+```rust
 [dependencies]
 notify-me = "0.1.0"
 ```
@@ -35,7 +35,7 @@ notifier.notify("notification title", "notification content").unwrap();
 use notify_me::{Notify, EmailNotifier};
 
 let notifier = EmailNotifier::new("smtp_host", "smtp_username", "smtp_password", "recipient").unwrap();
-notifier.notify("testing title", "testing content").unwrap();
+notifier.notify("notification title", "notification content").unwrap();
 ```
 
 ## Licence

@@ -1,17 +1,22 @@
 use super::*;
 
-/// Notifier for Wechat.
+/// Notifier for WeChat.
+/// One WechatNotifier can only notify one corresponding WeChat account.
 ///
-/// You can send message to your Wechat via this notifier.
-/// It implemented by xtuis which is a wechat-notify-system.
-/// The key of the notifier is the token, which you can get
-/// according to the document in
-/// [xtuis Chinese websites](https://xtuis.cn/xtuisindex.html)
+/// You can send message to your WeChat via this notifier.
+/// It implemented by [xtuis](https://xtuis.cn) which is a WeChat-notify-system.
+/// To use this notifier, you have to first get a xtuis token according to
+/// [xtuis Chinese websites](https://xtuis.cn)
 pub struct WechatNotifier {
     token: String,
 }
 
 impl WechatNotifier {
+    /// # Arguments
+    ///
+    /// * `token` - A xtuis token corresponding to your WeChat account.
+    /// You can get the token according to the document in
+    /// [xtuis Chinese websites](https://xtuis.cn)
     pub fn new(token: &str) -> Result<Self> {
         let token = token.to_string();
         Ok(Self { token })

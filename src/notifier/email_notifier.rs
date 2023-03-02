@@ -5,6 +5,7 @@ use lettre::{
 };
 
 /// Notifier for email.
+/// One EmailNotifier can only notify one corresponding mailbox.
 pub struct EmailNotifier {
     smtp_host: String,
     smtp_creds: Credentials,
@@ -13,6 +14,12 @@ pub struct EmailNotifier {
 }
 
 impl EmailNotifier {
+    /// # Arguments
+    ///
+    /// * `smtp_host` - SMTP server using TLS connections, e.g., `smtp.gmail.com`
+    /// * `smtp_username` - Your SMTP username, e.g., `sender@gmail.com`
+    /// * `smtp_password` - Your SMTP password.
+    /// * `recipient` - Email recipient, e.g., `recipient@gmail.com`
     pub fn new(
         smtp_host: &str,
         smtp_username: &str,
