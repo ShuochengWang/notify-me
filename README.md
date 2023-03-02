@@ -25,7 +25,7 @@ Hence you have to first follow the WeChat official account of [xtuis](https://xt
 ```rust
 use notify_me::{Notify, WechatNotifier};
 
-let notifier = WechatNotifier::new("your xtuis token");
+let notifier = WechatNotifier::new("your xtuis token").unwrap();
 notifier.notify("notification title", "notification content").unwrap();
 ```
 

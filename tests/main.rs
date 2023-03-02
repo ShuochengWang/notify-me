@@ -11,7 +11,7 @@ fn init() {
 #[test]
 fn test_wechat() {
     let token = std::fs::read_to_string("tests/wechat.config").unwrap();
-    let notifier = WechatNotifier::new(&token);
+    let notifier = WechatNotifier::new(&token).unwrap();
     notifier.notify("testing title", "testing content").unwrap();
 }
 

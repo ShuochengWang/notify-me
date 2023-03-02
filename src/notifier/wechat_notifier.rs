@@ -12,9 +12,9 @@ pub struct WechatNotifier {
 }
 
 impl WechatNotifier {
-    pub fn new(token: &str) -> Self {
+    pub fn new(token: &str) -> Result<Self> {
         let token = token.to_string();
-        Self { token }
+        Ok(Self { token })
     }
 }
 
