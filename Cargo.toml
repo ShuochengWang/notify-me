@@ -9,7 +9,7 @@ authors = ["Shuocheng Wang <wangshch5@outlook.com>"]
 homepage = "https://github.com/ShuochengWang/notify-me"
 repository = "https://github.com/ShuochengWang/notify-me"
 readme = "README.md"
-license = "MIT OR Apache-2.0"
+license = "MIT"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
