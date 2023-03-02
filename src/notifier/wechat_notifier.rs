@@ -22,8 +22,7 @@ impl Notify for WechatNotifier {
     fn notify(&self, title: &str, content: &str) -> Result<()> {
         let url = format!("https://wx.xtuis.cn/{}.send?", self.token);
         let data = [("text", title), ("desp", content)];
-        let resp = ureq::post(&url).send_form(&data)?;
-        log::debug!("notify response: {:?}", resp);
+        let _resp = ureq::post(&url).send_form(&data)?;
         Ok(())
     }
 }
